@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+.flexContenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color: white;
+}
+
+.div1{
+    width: 20%;
+}
+
+.div2{
+    width: 40%;
+}
+
+.div3{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+img{
+    height: 80px;
+    width: 100px;
+    text-align: center;
+}

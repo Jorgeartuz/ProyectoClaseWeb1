@@ -14,8 +14,8 @@ nav > a{
     margin-right: 25px;
 }
 
-img{
-    width: 100%;
+.imgP{
+    width: 200px;
     height: 400px;
 }
 
@@ -25,8 +25,18 @@ figure{
 
 .flexContainer{
     display: flex;
-    background-color: rgb(227, 216, 233);
     justify-content: space-between;
+}
+
+.flexContainer1{
+    display: flex;
+}
+
+.flexContainer2{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    text-align: center;
 }
 
 .divIzquierdo{
@@ -41,20 +51,20 @@ figure{
     background-color: rgb(43, 255, 0);
 }
 
-.divIzquierdoI{
-    display: flex;
-    
-    justify-content: space-between;
+.divFondoIzquierdo{
+    width: 50%;
 }
 
-.divDerechoI{
-    display: flex;
 
-    justify-content: space-between;
+
+
+.imgP{
+    width: 40%;
+    height: 40%;
 }
 
-.img{
-    width: 100%;
+.imgLogo{
+    width: 100px;
     height: 100px;
 }
 
