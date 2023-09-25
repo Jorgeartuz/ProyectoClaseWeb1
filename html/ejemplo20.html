@@ -1,0 +1,21 @@
+<script>
+
+    var numeroUno = 10;
+    var numeroDos = 15;
+    sonPrimosRelativos = true;
+
+
+    for (let i = 2; i <= numeroUno; i++) {
+
+        if (numeroUno % i == 0 && numeroDos % i == 0) {
+            sonPrimosRelativos = false;
+        } 
+    }
+
+    if (sonPrimosRelativos){
+        console.log("Son primos relativos");
+    } else{
+        console.log("No son primos relativos");
+    }
+
+</script>
