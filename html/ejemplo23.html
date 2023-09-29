@@ -1,0 +1,33 @@
+<script>
+    // crea un array que muestre los 12 mese del año, mostrar los 12 mese por pantalla usando console.log
+
+    var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+    for (let i = 0; i < meses.length; i++) {
+        console.log(meses[i]);
+    }
+
+    for (const key in meses) {
+        console.log(meses[key]);    
+    }
+
+    var meses = [];
+    meses[0] = "Enero";
+    meses[1] = "Febrero";
+    meses[2] = "Marzo";
+
+    meses.forEach(mes => {
+        console.log(mes);
+    });
+
+    for (const mes of meses) {
+        console.log(mes);
+    }
+
+
+
+
+
+
+
+</script>
