@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JavaScript</title>
+    <script src="../js/utilidades.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+
+        var h1 = crearNodoTexto("h1", "Quick Table of Contents");
+        adicionarNodoBody(h1);
+
+        var ul = crearNodo("ul");
+        var liUno = crearNodoTexto("li", "About the HTML 4 Specificution");
+        var liDos = crearNodoTexto("li", "Introductionn to HTML 4");
+        var liTres = crearNodoTexto("li", "On SGML and HTML");
+        var liTres = crearNodoTexto("li", "On SGML and HTML");
+
+        adicionarNodoContenedor(ul, liUno);
+        adicionarNodoContenedor(ul, liDos);
+        adicionarNodoContenedor(ul, liTres);
+        adicionarNodoBody(ul);
+
+
+
+    </script>
+
+
+</body>
+
+</html>

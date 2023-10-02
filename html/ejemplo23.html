@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JavaScript</title>
+    <script src="../js/utilidades.js"></script>
+
+</head>
+<body>
+
+
+    <script>
+
+        var h1 = crearNodoTexto("h1", "Ejemplo JavaScript");
+        var p = crearNodoTexto("p", "JS es un lenguaje de programacion")
+
+        var img = crearNodoImagen("../recursos/imagenes/back.jpg", "Imagen decorativa");
+
+        adicionarNodoBody(h1);
+        adicionarNodoBody(p);
+        adicionarNodoBody(img);
+
+
+        var h2 = crearNodoTexto("h2", "Noticias");
+        adicionarNodoBody(h2);
+
+        var ul = crearNodo("ul");
+        var liUno = crearNodoTexto("li", "AliS");
+        var liDos = crearNodoTexto("li", "GCP");
+        var liTres = crearNodoTexto("li", "Azurc");
+        adicionarNodoContenedor(ul, liUno);
+        adicionarNodoContenedor(ul, liDos);
+        adicionarNodoContenedor(ul, liTres);
+        adicionarNodoBody(ul);
+
+        var a = crearNodoA("Ejemplo", "#")
+        adicionarNodoBody(a);
+        
+
+    </script>
+    
+</body>
+</html>

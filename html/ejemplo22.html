@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JS</title>
+
+    <script src="../js/utilidades.js"></script>
+
+</head>
+<body>
+    
+
+    <h1 id="titulo">Ejemplo</h1>
+
+    <p id="texto">El Front End es mejor que el Back End</p>
+
+    <script>
+
+        var h1 = document.getElementById("titulo");
+        h1.innerHTML = "Ejemplo JS";
+
+
+        var p = crearNodoTexto("p", "El mundo cambio con un solo click")
+        var h2 = crearNodoTexto("h2", "BackEnd")
+
+        adicionarNodoBody(p);
+        adicionarNodoBody(h2);
+/*
+        var p = document.createElement("p");
+        var textoP = document.createTextNode("El mundo cambio con un solo click");
+        p.appendChild(textoP);
+        document.body.appendChild(p);
+
+        var h2 = document.createElement("h2");
+        var textoh2 = document.createTextNode("BackEnd");
+        h2.appendChild(textoh2);
+        document.body.appendChild(h2);
+*/
+        var pDos = document.getElementById("texto");
+        pDos.remove();
+
+    </script>
+    
+</body>
+</html>
