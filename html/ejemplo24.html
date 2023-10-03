@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,3 +36,31 @@
 </body>
 
 </html>
+=======
+<script>
+    //escriba un programa que escriba una frase y diga cuantas veces se repite la letra a. frase; "El dia esta soleado"
+
+
+    function contarA(letras) {
+        let numA = 0;
+        for (let letra of letras) {
+            if (letra === "a") {
+                numA++;
+            }
+        }
+        return numA;
+    }
+
+    const frase = "El dia esta soleado";
+    const letras = frase.split("").filter(letra => letra.match(/[a-zA-Z]/));
+    const numA = contarA(letras);
+    console.log(numA);
+
+
+
+
+
+
+
+</script>
+>>>>>>> 1cb793ab2faee62d43fe6da4d20dab9fa23fcb93
