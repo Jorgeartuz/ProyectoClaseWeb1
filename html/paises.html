@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo API JS</title>
+    <script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=KqzRCyl0JvpDLbhshTZLDEDjW5gCVof9zEhv4b1Co7dIE2MFkEYae1QxY8_5MHbDBmPdbf34w0czwkBXlLtT7A8MCMPgnjoftS6RHMMDvpHxFeef1umoZ1nnNsE-NAuicZK7wZIqy37nXxzFXZhn_E2G7aSVL8ZwkfsNR6AuuGCs4C42r7_6pjtOOIxNCN6blM6nwR8Iw2475er1zmTf8ImNaNJPFmux7p5XZgQMUQE_raseiD4Xz6qDklF5_nZYmeR-LJEY9UsXa6GSpOhmj4ujrORTapmeIOKH07xBA4Lr7b2Pd-fQSYfSSqb6vLzGfrD9tWedxX13N8qffpCB_zCmRBPu4rjNXdxGvX4UHIceD7tdkrZgHwgbwz_9_61ph_oAoW2y3p_5VA_xpusqQH6z43H3zmCajetObB2WhtInqZn4pPwvD0wUjzkChgSsF6djEQ-bli8LE9wG3NwA5ktjqGURnWnjwt3iFLrvXUaVz0wOB6ywIdk948TUWqPJ0EW73L5Ncoc_F2CuFNGFXEhe2iL5bszp43_AzeEKfQjY7isUvI8-g5LR98PSOg5sysgDJteow4e_LXgAIJbUkIMB6V7Pqk4DktKxpD_9L5B0a-tM7eX3mz9BA4PSz9GkUMVqpM6LvndLTX1FxJOx8gGAaDnKi7s3G2LduE_I9Qt-i-zpgokZ8I8c9foGIkJhomRI-PwV7xsr43A9BFrB8dbah9ZMe1NB9EJjDv7oql4NZUkJUUoNAjyqveV6ZMknpQFNIZ19KUr2cgb45J4_67Fzr0ggW_NDqyNBmrHwv0O5BK3qN2FpofqSwTldo-T2jBJijAO0AxDpKZBZREzgugXt80LVjDwPltVO7klk9apiEJQUL0opeolXZhwZCDrQfBdCk0PI8oi8p-q_6llPsXMMoSpQesVI7vPgru8-zRAPujHlVkvvmVAq-jIxVbSOZa9Trb7D6en5NrvrdHGO2KG7ffAp2ZXE8xvZoJYLzW5phrgW86lq9DZ4Jqo6FQzGZaQTEXjZJYVMORKQiTxE5qPO3q4yWu5YJaG833dYDx30XzfCBUfgyYl2hpADk-MlBBhab-pKsBY7-5uQ0LWsXHEdbMfIELF093a2bhH6oCJX097IKzB3Sx5GD8_7fUQpKR1VNIcwo85z2w7ogajle8grcPLlv2URc0AWsSEYaVr-nB01v0kANVdP5e-SIBys319M5NIEehyFsHUwtjhVaRCdX2znBJFk3fpzS_qFSlh5PhFiPxhgH18R5X1vkUyvcc1AAOoIHX6srwm9DCy1W-CUHn_xsUImfRTabl3uC9OZMqyjRBZETwmmUS-6w1cwqM4KXGOQj2o6hofSV2UEDglQh9ogjsBwGw9NNbfolhKclPHYag60wmGguLx8-dYADxeuFAHyEhAM7mbP7Jnan4OVgKcebSA3pfCCR5w5GK6mORy-lWKKCnnaOZSYHc4IQPiFfHbr3HJZ5cXbEqgFkCDA5M8SirTAfUhmKYeVrrSAklaO6OQvD5Err5fibXMvOShiUQlBimNOTpye5MbAbrkBmoGAw2QPTnObPvR0ZBFeFAbZq6HBQgZQxKThmpdAQtkMPMz3conNPzRx3tFe4hkhpCJ46Dw628LpnLpVUCFc7EQqg-QvjReuW4JYFEEy" nonce="045fa17eb6cf5afb06f34e3be3dcc7ef" charset="UTF-8"></script><script src="../js/consumirapipaises.js"></script>
+    <script src="../js/utilidades.js"></script>
+
+    <script>
+        function llamarMostrarPaises(){
+            var selectPaises = document.getElementById('selectPaises');
+            mostrarDatosPaisSelecionado(selectPaises.value);
+        }
+    </script>
+</head>
+<body>
+    <h1>Paises</h1>
+
+    <button onclick="poblarDatosPaises()">Poblar Datos Paises</button>
+    <select id="selectPaises" onchange="llamarMostrarPaises()"></select>
+
+    <table id="tablaPaises">
+        <tr>
+            <th>Nommbre Oficial</th>
+            <th>Capitales</th>
+            <th>Moneda</th>
+            <th>Banderas</th>
+            <th>Poblacion</th>
+        </tr>
+    </table>
+
+    
+
+</body>
+</html>
